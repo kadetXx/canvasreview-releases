@@ -1,15 +1,15 @@
 # canvasreview
 
+[![Thirty seconds of a canvas being read](docs/poster.jpg)](docs/short-canrev.mp4)
+
+*Thirty seconds of a PR being read on the canvas. Click for the video.*
+
 A pull request as a canvas.
 
 Open a PR and you get one frame per changed function, wired in the order the logic runs,
 with a one-line summary on each and a short list of questions to answer before you
 approve. You read it with the arrow keys, frame by frame, instead of scrolling a diff
 sorted alphabetically by file.
-
-[![Thirty seconds of a canvas being read](docs/poster.jpg)](docs/short-canrev.mp4)
-
-*Thirty seconds of a PR being read on the canvas. Click for the video.*
 
 It runs on your Mac, through the GitHub CLI and the Claude Code you already use. There is
 no server of ours, no account, and nothing is stored anywhere but GitHub.
