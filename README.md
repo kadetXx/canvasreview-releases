@@ -1,6 +1,10 @@
 # canvasreview
 
-[![Thirty seconds of a canvas being read](docs/poster.jpg)](docs/short-canrev.mp4)
+
+
+https://github.com/user-attachments/assets/6b09bbdb-22a9-488b-93ba-e9ae5ce7e521
+
+
 
 *Thirty seconds of a PR being read on the canvas. Click for the video.*
 
