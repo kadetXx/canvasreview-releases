@@ -65,6 +65,36 @@ canvas has an Open, a copy-link, and a stop. Quitting the app stops them all.
    on) and asks a PR-specific question where one fits.
 5. The canvas is served from a local port and opened in your browser.
 
+## Who does what
+
+```mermaid
+flowchart LR
+    subgraph you [You]
+        A[paste a PR link]
+        R[read, answer the questions,\ncomment, approve]
+    end
+    subgraph mac [Your Mac]
+        B[gh fetches the PR]
+        C[Claude Code writes the\nsummaries and questions]
+        D[the canvas opens\nin your browser]
+    end
+    subgraph gh [GitHub]
+        P[(the PR:\ncomments, reviews)]
+    end
+    subgraph mate [Teammate]
+        T[opens the same PR\nin their app]
+        U[sees your comments\non their canvas]
+    end
+    A --> B --> C --> D --> R
+    R --> P
+    P --> T --> U
+    U --> P
+```
+
+Everything you write lands on the PR as you, through `gh`. A teammate with the app runs
+the same PR and gets their own canvas with your comments already on it, because the
+comments never lived anywhere but GitHub.
+
 ## Where your code goes
 
 Two places, both of which it already goes to. GitHub, through `gh`, to fetch the PR and
