@@ -2,7 +2,7 @@
 
 <video src="https://github.com/user-attachments/assets/6b09bbdb-22a9-488b-93ba-e9ae5ce7e521" poster="https://raw.githubusercontent.com/kadetXx/canvasreview-releases/main/docs/poster.jpg" autoplay muted loop playsinline controls width="100%"></video>
 
-*Thirty seconds of a PR being read on the canvas, first run, straight out of the model.*
+*Thirty seconds of a PR being read on the canvas.*
 
 A pull request as a canvas.
 
