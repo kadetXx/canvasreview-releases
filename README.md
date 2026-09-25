@@ -85,13 +85,11 @@ browser.
   the comments live on GitHub.
 - **Source.** Private for now, while it finds its shape. The app contains what it runs.
 
-## Made with
+## A note on the code
 
-Built by [Kadet](https://kadet.dev) with AI assistance, Claude Fable 5.1 in Claude Code.
-Audit it: the app contains what it runs, and the
-release DMGs are signed and notarised. Contributions are welcome once the source opens;
-there will be a contribution guide then. Until then, issues and screenshots here are the
-way to help.
+The codebase contains AI-written code, produced with Claude Fable 5.1 in Claude Code. It
+has been reviewed and is still being reviewed by me. Audits are welcome, and so are
+contributions once the source opens.
 
 ## Feedback
 
