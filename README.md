@@ -126,9 +126,9 @@ browser.
   34-file PR that was under a dollar and about a minute.
 - **Quality.** The summaries and questions come from a model. They are usually right and
   sometimes not. That is why they are questions, not verdicts.
-- **Early.** This is weeks old. Apple Silicon only. Sharing a canvas with a teammate is
-  not built yet; today they run it on the same PR and see the same comments, because
-  the comments live on GitHub.
+- **Early.** This is weeks old. Apple Silicon only. Share copies a link to the story of
+  a PR, kept in a secret gist on your own GitHub; with the app, a teammate gets the full
+  canvas, and the comments are the same ones on the PR.
 - **Source.** Private for now, while it finds its shape. The app contains what it runs.
 
 ## Feedback
@@ -230,11 +230,3 @@ your company, and its cost is already on your plan. Nothing to set up.
 **Private repos?** Yes, anything your GitHub CLI login can see.
 
 **Intel Macs?** Not yet. The bundled runtime is Apple Silicon.
-
-### What is not built yet
-
-- Sharing a canvas by link, and a read-only view of one in the browser.
-- Intel builds.
-- Languages beyond TypeScript, JavaScript, Go and Python get one frame per file.
-- A hosted team layer: review state that persists across people, and a GitHub App that
-  puts a canvas on every PR without anyone running anything.
