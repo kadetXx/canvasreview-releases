@@ -73,33 +73,18 @@ canvas has an Open, a copy-link, and a stop. Quitting the app stops them all.
 
 ## Who does what
 
-```mermaid
-flowchart LR
-    subgraph you [You]
-        A[paste a PR link]
-        R[read, answer the questions,\ncomment, approve]
-    end
-    subgraph mac [Your Mac]
-        B[gh fetches the PR]
-        C[Claude Code writes the\nsummaries and questions]
-        D[the canvas opens\nin your browser]
-    end
-    subgraph gh [GitHub]
-        P[(the PR:\ncomments, reviews)]
-    end
-    subgraph mate [Teammate]
-        T[opens the same PR\nin their app]
-        U[sees your comments\non their canvas]
-    end
-    subgraph others [Anyone else]
-        W[comments on github.com,\nor a bot does]
-    end
-    A --> B --> C --> D --> R
-    R --> P
-    P --> T --> U
-    U --> P
-    W --> P
-    P -. shows on your canvas,\nanswer it there .-> R
+```
+you          paste a PR link into the app
+                 |
+your Mac     gh fetches the PR  ->  Claude Code writes the summaries and questions  ->  the canvas opens in your browser
+                 |
+you          read it in order, answer the questions, comment, approve
+                 |
+GitHub       everything you wrote lands on the PR, as you
+                 |                                  ^
+teammate     opens the same PR in their app  ->  your comments are on their canvas  ->  their replies land on the PR
+                                                    ^
+anyone else  comments on github.com, or a bot does  ->  it shows on your canvas, and you answer it there
 ```
 
 Everything you write lands on the PR as you, through `gh`. A teammate with the app runs
