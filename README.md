@@ -1,12 +1,8 @@
 # canvasreview
 
+<video src="https://github.com/user-attachments/assets/6b09bbdb-22a9-488b-93ba-e9ae5ce7e521" poster="https://raw.githubusercontent.com/kadetXx/canvasreview-releases/main/docs/poster.jpg" autoplay muted loop playsinline controls width="100%"></video>
 
-
-https://github.com/user-attachments/assets/6b09bbdb-22a9-488b-93ba-e9ae5ce7e521
-
-
-
-*Thirty seconds of a PR being read on the canvas. Click for the video.*
+*Thirty seconds of a PR being read on the canvas. A first trial: the questions are not tuned yet.*
 
 A pull request as a canvas.
 
@@ -89,7 +85,7 @@ browser.
   the comments live on GitHub.
 - **Source.** Private for now, while it finds its shape. The app contains what it runs.
 
-## A note on the code
+## Author notes
 
 The codebase contains AI-written code, produced with Claude Fable 5.1 in Claude Code. It
 has been reviewed and is still being reviewed by me. Audits are welcome, and so are
