@@ -30,7 +30,7 @@ It needs two tools you may already have, and it tells you if either is missing:
 
 ```sh
 brew install gh && gh auth login
-npm install -g @anthropic-ai/claude-code && claude
+curl -fsSL https://claude.ai/install.sh | bash && claude
 ```
 
 The GitHub CLI (`gh`) fetches the PR and posts your comments as you. Claude Code writes the summaries and
@@ -202,8 +202,8 @@ to jump.
 **"Needs the GitHub CLI, signed in."** Install `gh` and run `gh auth login`, then Check
 again. If your org uses SSO, `gh auth login` walks you through it.
 
-**"Claude Code, signed in."** Install it with the command in the panel, then run `claude`
-once to sign in.
+**"Claude Code, signed in."** Install it with the command in the panel (the native
+installer; `brew install --cask claude-code` also works), then run `claude` once to sign in.
 
 **"No pull request #123 on owner/repo, or no access to it."** Check the number, and that
 `gh auth status` shows an account that can see that repo. Some orgs require an admin to
