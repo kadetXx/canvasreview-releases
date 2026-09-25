@@ -74,17 +74,35 @@ canvas has an Open, a copy-link, and a stop. Quitting the app stops them all.
 ## Who does what
 
 ```
-you          paste a PR link into the app
-                 |
-your Mac     gh fetches the PR  ->  Claude Code writes the summaries and questions  ->  the canvas opens in your browser
-                 |
-you          read it in order, answer the questions, comment, approve
-                 |
-GitHub       everything you wrote lands on the PR, as you
-                 |                                  ^
-teammate     opens the same PR in their app  ->  your comments are on their canvas  ->  their replies land on the PR
-                                                    ^
-anyone else  comments on github.com, or a bot does  ->  it shows on your canvas, and you answer it there
+ you                          your Mac
+ ┌────────────────────┐       ┌──────────────────────────────────────────┐
+ │ paste a PR link    │──────▶│ gh fetches the PR                        │
+ └────────────────────┘       │        │                                 │
+                              │        ▼                                 │
+                              │ Claude Code writes the summaries         │
+                              │ and the questions                        │
+                              │        │                                 │
+                              │        ▼                                 │
+                              │ the canvas opens in your browser         │
+                              └────────────────────┬─────────────────────┘
+                                                   │
+                                                   ▼
+                              ┌──────────────────────────────────────────┐
+                              │ you read it in order, answer the         │
+                              │ questions, comment, approve              │
+                              └────────────────────┬─────────────────────┘
+                                                   │ as you, through gh
+                                                   ▼
+ ┌────────────────────┐       ┌──────────────────────────────────────────┐       ┌────────────────────┐
+ │ anyone else        │──────▶│ GitHub: the PR                           │◀─────▶│ a teammate         │
+ │ comments on        │       │ comments, reviews, threads               │       │ opens the same PR  │
+ │ github.com, or a   │       └────────────────────┬─────────────────────┘       │ in their app; your │
+ │ bot does           │                            │                             │ comments are on    │
+ └────────────────────┘                            ▼                             │ their canvas       │
+                              ┌──────────────────────────────────────────┐       └────────────────────┘
+                              │ it shows on your canvas, on its line,    │
+                              │ and you answer it there                  │
+                              └──────────────────────────────────────────┘
 ```
 
 Everything you write lands on the PR as you, through `gh`. A teammate with the app runs
