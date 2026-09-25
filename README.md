@@ -129,12 +129,6 @@ browser.
   the comments live on GitHub.
 - **Source.** Private for now, while it finds its shape. The app contains what it runs.
 
-## Author notes
-
-The codebase contains AI-written code, produced with Claude Fable 5.1 in Claude Code. It
-has been reviewed and is still being reviewed by me. Audits are welcome, and so are
-contributions once the source opens.
-
 ## Feedback
 
 Open an issue here. Screenshots help.
