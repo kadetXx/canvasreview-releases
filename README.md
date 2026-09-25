@@ -11,7 +11,7 @@ with a one-line summary on each and a short list of questions to answer before y
 approve. You read it with the arrow keys, frame by frame, instead of scrolling a diff
 sorted alphabetically by file.
 
-It runs on your Mac, through the GitHub CLI and the Claude Code you already use. There is
+It runs on your Mac, through the GitHub CLI (`gh`) and the Claude Code you already use. There is
 no server of ours, no account, and nothing is stored anywhere but GitHub.
 
 Which cuts both ways: every comment already on the PR, from a teammate on github.com or
@@ -33,7 +33,7 @@ brew install gh && gh auth login
 npm install -g @anthropic-ai/claude-code && claude
 ```
 
-`gh` fetches the PR and posts your comments as you. Claude Code writes the summaries and
+The GitHub CLI (`gh`) fetches the PR and posts your comments as you. Claude Code writes the summaries and
 the questions, on your own plan. There are no keys to paste and no account to make.
 
 ## Use
@@ -60,7 +60,7 @@ canvas has an Open, a copy-link, and a stop. Quitting the app stops them all.
 
 ## How it works
 
-1. The PR is fetched with `gh`, without checking out the repo.
+1. The PR is fetched with the GitHub CLI, without checking out the repo.
 2. Every changed file is parsed and split into frames: one per top-level declaration,
    the function or component as it stands after the change, with the diff marked inside.
 3. One Claude call reads all the frames and returns the reading order, the arrows between
@@ -76,7 +76,7 @@ canvas has an Open, a copy-link, and a stop. Quitting the app stops them all.
 ```
  you                          your Mac
  ┌────────────────────┐       ┌──────────────────────────────────────────┐
- │ paste a PR link    │──────▶│ gh fetches the PR                        │
+ │ paste a PR link    │──────▶│ the GitHub CLI fetches the PR            │
  └────────────────────┘       │        │                                 │
                               │        ▼                                 │
                               │ Claude Code writes the summaries         │
@@ -91,7 +91,7 @@ canvas has an Open, a copy-link, and a stop. Quitting the app stops them all.
                               │ you read it in order, answer the         │
                               │ questions, comment, approve              │
                               └────────────────────┬─────────────────────┘
-                                                   │ as you, through gh
+                                                   │ as you, through the GitHub CLI
                                                    ▼
  ┌────────────────────┐       ┌──────────────────────────────────────────┐       ┌────────────────────┐
  │ anyone else        │──────▶│ GitHub: the PR                           │◀─────▶│ a teammate         │
@@ -105,13 +105,13 @@ canvas has an Open, a copy-link, and a stop. Quitting the app stops them all.
                               └──────────────────────────────────────────┘
 ```
 
-Everything you write lands on the PR as you, through `gh`. A teammate with the app runs
+Everything you write lands on the PR as you, through the GitHub CLI. A teammate with the app runs
 the same PR and gets their own canvas with your comments already on it, because the
 comments never lived anywhere but GitHub.
 
 ## Where your code goes
 
-Two places, both of which it already goes to. GitHub, through `gh`, to fetch the PR and
+Two places, both of which it already goes to. GitHub, through the GitHub CLI, to fetch the PR and
 to post what you write. And Anthropic, through your Claude Code session, which reads the
 frames of the PR the same way it reads a repo when you use Claude Code on it. Your
 Claude Code login, plan and data settings apply. Nowhere else: there is no canvasreview
@@ -231,7 +231,7 @@ what you never opened is something a review has never had before.
 **Why Claude Code and not an API key?** You already have it, it is already allowed at
 your company, and its cost is already on your plan. Nothing to set up.
 
-**Private repos?** Yes, anything your `gh` can see.
+**Private repos?** Yes, anything your GitHub CLI login can see.
 
 **Intel Macs?** Not yet. The bundled runtime is Apple Silicon.
 
