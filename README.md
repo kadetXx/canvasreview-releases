@@ -85,6 +85,15 @@ browser.
   the comments live on GitHub.
 - **Source.** Private for now, while it finds its shape. The app contains what it runs.
 
+## Made with
+
+Built by [Kadet](https://kadet.dev) with AI assistance: Claude Fable 5.1 through Claude
+Code did most of the typing, from the pipeline to the Swift shell to this README, with the
+design and every decision made by hand. Audit it: the app contains what it runs, and the
+release DMGs are signed and notarised. Contributions are welcome once the source opens;
+there will be a contribution guide then. Until then, issues and screenshots here are the
+way to help.
+
 ## Feedback
 
 Open an issue here. Screenshots help.
