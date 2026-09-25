@@ -126,10 +126,6 @@ browser.
   34-file PR that was under a dollar and about a minute.
 - **Quality.** The summaries and questions come from a model. They are usually right and
   sometimes not. That is why they are questions, not verdicts.
-- **Early.** This is weeks old. Apple Silicon only. Share copies a link to the story of
-  a PR, kept in a secret gist on your own GitHub; with the app, a teammate gets the full
-  canvas, and the comments are the same ones on the PR.
-- **Source.** Private for now, while it finds its shape. The app contains what it runs.
 
 ## Feedback
 
