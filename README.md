@@ -6,6 +6,8 @@
 
 A pull request as a canvas.
 
+**[Download for Mac](https://github.com/kadetXx/canvasreview-releases/releases/latest/download/CanvasReview.dmg)** · Apple Silicon, notarised. Free.
+
 Open a PR and you get one frame per changed function, wired in the order the logic runs,
 with a one-line summary on each and a short list of questions to answer before you
 approve. You read it with the arrow keys, frame by frame, instead of scrolling a diff
@@ -22,7 +24,7 @@ there. Your replies go back to the PR. Nobody has to switch tools for you to use
 
 Apple Silicon only for now.
 
-1. Download `CanvasReview.dmg` from the [latest release](https://github.com/kadetXx/canvasreview-releases/releases/latest).
+1. [Download `CanvasReview.dmg`](https://github.com/kadetXx/canvasreview-releases/releases/latest/download/CanvasReview.dmg).
 2. Open it and drag the app to Applications.
 3. Open the app. It lives in the menu bar.
 
