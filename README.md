@@ -14,6 +14,10 @@ sorted alphabetically by file.
 It runs on your Mac, through the GitHub CLI and the Claude Code you already use. There is
 no server of ours, no account, and nothing is stored anywhere but GitHub.
 
+Which cuts both ways: every comment already on the PR, from a teammate on github.com or
+from a bot, shows up on your canvas as a bubble on its line, and you answer it right
+there. Your replies go back to the PR. Nobody has to switch tools for you to use this.
+
 ## Install
 
 Apple Silicon only for now.
@@ -47,6 +51,8 @@ canvas has an Open, a copy-link, and a stop. Quitting the app stops them all.
   middle of the screen.
 - Each frame has a rail of questions. Click one to mark it checked, then issue, then
   n/a. Nothing here is a finding; they are things to look at.
+- Comments already on the PR, whoever left them and wherever they left them, appear as
+  bubbles on their lines. Click one to read the thread and reply. Unread ones are marked.
 - Hover a line of code for a `+` to comment on it. Press `c` and click anywhere for a
   free comment. Both post to the PR on GitHub, and replies are ordinary GitHub threads.
 - Approve shows how many questions you never opened, then posts your review to GitHub
@@ -85,10 +91,15 @@ flowchart LR
         T[opens the same PR\nin their app]
         U[sees your comments\non their canvas]
     end
+    subgraph others [Anyone else]
+        W[comments on github.com,\nor a bot does]
+    end
     A --> B --> C --> D --> R
     R --> P
     P --> T --> U
     U --> P
+    W --> P
+    P -. shows on your canvas,\nanswer it there .-> R
 ```
 
 Everything you write lands on the PR as you, through `gh`. A teammate with the app runs
