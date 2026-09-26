@@ -1,6 +1,6 @@
 # canvasreview
 
-[![downloads](https://img.shields.io/github/downloads/kadetXx/canvasreview-releases/total?style=flat-square&color=a371f7&label=downloads)](https://github.com/kadetXx/canvasreview-releases/releases/latest) [![latest](https://img.shields.io/github/v/release/kadetXx/canvasreview-releases?style=flat-square&color=2ea043&label=latest)](https://github.com/kadetXx/canvasreview-releases/releases/latest) [![released](https://img.shields.io/github/release-date/kadetXx/canvasreview-releases?style=flat-square&color=555&label=released)](https://github.com/kadetXx/canvasreview-releases/releases/latest) ![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-555?style=flat-square&logo=apple&logoColor=white) ![price](https://img.shields.io/badge/price-free-555?style=flat-square)
+[![downloads](https://img.shields.io/github/downloads/kadetXx/canvasreview-releases/total?style=flat-square&color=a371f7&label=downloads)](https://github.com/kadetXx/canvasreview-releases/releases/latest) [![latest](https://img.shields.io/github/v/release/kadetXx/canvasreview-releases?style=flat-square&color=2ea043&label=latest)](https://github.com/kadetXx/canvasreview-releases/releases/latest) ![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-555?style=flat-square&logo=apple&logoColor=white)
 
 <video src="https://github.com/user-attachments/assets/6b09bbdb-22a9-488b-93ba-e9ae5ce7e521" poster="https://raw.githubusercontent.com/kadetXx/canvasreview-releases/main/docs/poster.jpg" autoplay muted loop playsinline controls width="100%"></video>
 
